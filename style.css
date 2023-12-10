@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 body{
-    background-image: url(../pxfuel.jpg);
+    background-image: url(./pxfuel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
