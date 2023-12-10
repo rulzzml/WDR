@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDR | WEBSITE</title>
+    <link rel="stylesheet" href="./style.css">
+     
+    <!-- FONT AWESOME CDN -->
+    <script src="https://kit.fontawesome.com/ce0ff88187.js"></script> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#hero">Web Developer | Rull</a></div>
+            <ul class="links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#channel">Profile YouTube</a></li>
+                <li><a href="https://www.youtube.com/@WebdeveloperRull">Channel</a></li>
+            </ul>
+            <a href="mailto:programminguser51@gmail.com" class="action-btn">Contact</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="#hero">Home</a></li>
+                <li><a href="#channel">Profile YouTube</a></li>
+                <li><a href="https://www.youtube.com/@WebdeveloperRull">Channel</a></li>
+                <a href="mailto:programminguser51@gmail.com" class="action-btn">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>My web personal..</p>
+            <a href="https://www.youtube.com/@WebdeveloperRull">Subscribe</a>
+            <a href="#self">Watch More</a>
+        </section>
+    </main>
+
+    <!-- Channel -->
+    <div id="channel">
+        <div class="card">
+            <div class="lines"></div>
+            <div class="imgbx">
+                <img src="Black White Minimalist Technology YouTube Channel Logo.png" alt="">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2><i class="fa-brands fa-youtube"></i>Web Dev Rull<br><span>Web Dev, Content Creator</span></h2>
+                    <div class="data">
+                        <h3>2<br><span>Subscribers</span></h3>
+                        <h3>2<br><span>Videos</span></h3>
+                    </div>
+                    <div class="actionBtn">
+                        <a href="#hero">Subscribe</a>
+                        <a href="#self">Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabel perkenalan diri -->
+    <div class="container" id="self">
+        <h1>Self Introduction</h1>
+    
+        <table class="responsive-table">
+            <tr>
+                <th>Name</th>
+                <td>Khoirul Anam</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>14 Years Old</td>
+            </tr>
+            <tr>
+                <th>Work</th>
+                <td>Web Developer And Designer Web</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>Indonesian, Jakarta</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
