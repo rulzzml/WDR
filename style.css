@@ -406,13 +406,13 @@ section#hero{
         margin-bottom: 15rem;
     }
 }
-@media screen and (max-width: 568px){
+@media screen and (max-width: 580px){
     .card{
         position: relative;
         width: 290px;
         height: 190px;
         background: #fff;
-        margin-left: 15%;
+        margin-left: 5%;
         transition: 0.5s;
     }
 }
