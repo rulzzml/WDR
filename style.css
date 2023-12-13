@@ -45,7 +45,19 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.navbar a:hover,
+.dropdown-menu a:hover{
+  background: transparent;
+  color: #fff;
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
 .navbar .logo a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar .logo a:hover0 {
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
@@ -192,7 +204,7 @@ section#hero {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 678px) {
   .dropdown-menu {
     left: 2rem;
     width: unset;
@@ -211,7 +223,7 @@ section#hero {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    margin-left: 60px;
+    margin-left: 13px;
   }
 }
 
@@ -269,7 +281,7 @@ section#hero {
   left: 50%;
   transform: translateX(-50%);
   width: 160px;
-  height: 160px;
+  height: 150px;
   background: #000;
   transition: 0.5s;
   z-index: 10;
@@ -403,7 +415,7 @@ section#hero {
     width: 290px;
     height: 190px;
     background: #fff;
-    margin-left: 30%;
+    margin-left: 5%;
     transition: 0.5s;
   }
   section#hero {
@@ -422,7 +434,7 @@ section#hero {
     width: 270px;
     height: 190px;
     background: #fff;
-    margin-left: 30%;
+    margin-left: 15%;
     transition: 0.5s;
   }
 }
