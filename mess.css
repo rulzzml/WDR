@@ -1,84 +1,102 @@
-*{
-    MARGIN: 0;
-    PADDING: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-body{
-    background: linear-gradient(top, #03d38d, #6de709, #10daf5);
-    border: 4px solid green;
-    border-radius: 14px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    z-index: 999;
+body {
+  background: linear-gradient(top, #03d38d, #6de709, #10daf5);
+  border: 4px solid green;
+  border-radius: 14px;
+  height: 300px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20%;
+  z-index: 999;
 }
-h1 a{
-    color: black;
-    text-decoration: none;
+h1 a {
+  color: black;
+  text-decoration: none;
 }
-h1 a:hover{
-    text-decoration: underline;
-    transition: all 0.7s ease;
+h1 a:hover {
+  text-decoration: underline;
+  transition: all 0.7s ease;
 }
-.youtube i{
-    color: red;
+.youtube i {
+  color: red;
 }
-.mail i{
-    color: rgb(255, 145, 0);
+.mail i {
+  color: rgb(255, 145, 0);
 }
-.telegram i{
-    color: rgb(0, 153, 255);
+.mail a {
+  width: 50%;
 }
-.instagram i{
-    color: rgb(98, 17, 230);
+.telegram i {
+  color: rgb(0, 153, 255);
 }
-.whatsapp i{
-    color: green;
+.instagram i {
+  color: rgb(98, 17, 230);
+}
+.whatsapp i {
+  color: green;
 }
 .youtube i,
 .mail i,
 .telegram i,
 .instagram i,
-.whatsapp i{
-    margin-right: 10px;
-    margin-top: 20px;
-    margin-left: 10px;
+.whatsapp i {
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 .youtube a:hover,
 .mail a:hover,
 .telegram a:hover,
 .instagram a:hover,
-.whatsapp a:hover{
-    color: #333;
-    transition: all 0.7s;
+.whatsapp a:hover {
+  color: #333;
+  transition: all 0.7s;
 }
-.btn{
-    margin-top: 10%;
-    margin-bottom: 1.5%;
+.btn {
+  margin-top: 10%;
+  margin-bottom: 1.5%;
 }
-.btn a{
-    padding: 20px 583px;
-    background: #10daf5;
-    color: black;
+.btn a {
+  padding: 20px 583px;
+  background: #10daf5;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.btn a:hover {
+  text-decoration: underline;
+  background: #333;
+  color: #fff;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+  h1 {
     font-size: 25px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
+  }
+  .btn a {
+    padding: 5px 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    font-size: 18px;
+  }
 }
-.btn a:hover{
-    text-decoration: underline;
-    background: #333;
-    color: #fff;
-    transition: all 0.5s;
-}
-@media screen and (max-width: 678px){
-    h1{
-        font-size: 25px;
-    }
-    .btn a{
-        padding: 10px 150px;
-        margin-left: 3rem;
-        font-size: 20px;
-    }
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+  .btn a {
+    padding: 5px 100px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+    font-size: 18px;
+  }
 }
