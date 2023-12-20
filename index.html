@@ -11,43 +11,34 @@
     <script src="https://kit.fontawesome.com/ce0ff88187.js"></script> 
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="#hero">Web Developer | Rull</a></div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#footer">Follow Sosmed</a></li>
-                <li><a href="https://saweria.co/RulzzML">Gift</a></li>
-            </ul>
-            <a href="mailto:programminguser51@gmail.com" class="action-btn">Contact</a>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <div class="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#footer">Follow Sosmed</a></li>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Web Developer Rull</label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#news">RNews</a></li>
             <li><a href="https://saweria.co/RulzzML">Gift</a></li>
-            <a href="mailto:programminguser51@gmail.com" class="action-btn">Contact</a>
-        </div>
-    </header>
+            <li><a href="mailto:programminguser51@gmail.com">Contact</a></li>
+            <p class="v">V 1.0.2</p>
+        </ul>
+    </nav>
 
     <div class="content">
-        <h1>Welcome In Web</h1>
+        <h3>Hello___</h3>
+        <h1>Im Rull</h1>
         <p>Programming, Designer Web, And Content Creator</p>
     </div>
     <div>
         <button type="button"><span></span><a href="https://www.youtube.com/@WebdeveloperRull">Subscribe</a></button>
-        <button type="button"><span></span><a href="#about">Watch More</a></button>
+        <button type="button"><span></span><a href="#profile">Watch More</a></button>
     </div>
 
-
-    <!-- Gradasi Background -->
-    <div class="gb">
     <!-- Tabel -->
-    <div class="container">
+    <div class="container" id="profile">
         <h1>Self Introduction</h1>
     
         <table class="responsive-table">
@@ -72,18 +63,26 @@
 
 
     <!-- About -->
-    <div class="about" id="about">
+    <div class="about" id="profile">
             <h1>About Me</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur molestiae, dolorem inventore obcaecati facere perferendis sequi illo ea ducimus nam reprehenderit quia itaque, adipisci officia? Cum rerum velit itaque, ut quia esse distinctio accusantium iure vero praesentium ipsa suscipit aliquid?</p>
     </div>
 
-    <!-- Sosmed -->
-    <div class="sosmed">
-            <h1>My Social Media</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur molestiae, dolorem inventore obcaecati facere perferendis sequi illo ea ducimus nam reprehenderit quia itaque, adipisci officia? Cum rerum velit itaque, ut quia esse distinctio accusantium iure vero praesentium ipsa suscipit aliquid?</p>
+    <!-- Video -->
+    <div class="video" id="news">
+        <h1>RNews</h1>
+        <div class="image">
+            <img src="./thumbnail2.jpg" alt="">
+            <h1>How do you create a navbar using HTML and CSS and assisted by ChatGPT? </h1>
+            <p>Click the photo for go on YouTube</p>
+        </div>
+        <div class="image2">
+            <img src="./thumbnail1.jpg">
+            <h1>How do you create a footer with the help of ChatGPT on a website?</h1>
+            <p>Click the photo for go on YouTube</p>
+        </div>
     </div>
 
-    </div>
     <!-- Footer -->
     <footer id="footer">
         <div class="footer-content">
@@ -96,24 +95,8 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>Copyright &copy; WDR 2023. All Right Reserved</p>
+            <p>Copyright &copy; WDR 2023. <spans class="spans">All Right Reserved</spans></p>
         </div>
     </footer>
-
-
-    <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector('.dropdown-menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-    </script>
 </body>
 </html>
